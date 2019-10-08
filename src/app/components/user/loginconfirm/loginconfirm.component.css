@@ -1,0 +1,39 @@
+.card{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.field-full-width{
+    width: 100%;
+}
+.btnLogin{
+    width: 90%;
+    background-color: #649dd1;
+    height: 50px;
+
+}
+.btnSignup{
+width: 90%;
+background-color: #649dd1;
+height: 50px;
+
+}
+
+
+.btnSignup:hover{
+    border-color: #649dd1;
+    color: #649dd1;
+    background-color: azure;
+}
+.btnLogin:hover{
+    border-color: #649dd1;
+    color: #649dd1;
+    background-color: azure;
+}
+
+
+.card-header{
+    background-color:  #649dd1;
+}
+.card-header-text{
+    color: azure;
+}

@@ -1,0 +1,39 @@
+.img{
+    width:100%;
+    height: 70%;
+    overflow: auto;
+    
+}
+
+.search-box .form-control{
+    width:60%;
+    height:50px;
+    position: absolute;
+    top: 77%;
+    left: 19%;
+    opacity:.7;
+
+
+}
+
+.title{
+    position: absolute;
+    top: 43%;
+    left: 31.5%;
+    color : white ;
+
+}
+.discover{
+    position: absolute;
+    top: 89%;
+    left: 42%;
+    width: 145px;
+
+}
+.description{
+    position: absolute;
+    top: 60%;
+    left: 32.5%;
+    color : white ;
+
+}

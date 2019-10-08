@@ -1,0 +1,23 @@
+
+<ngb-carousel #carousel interval="1000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+        <ng-template ngbSlide *ngFor="let img of images; index as i">
+          <div class="carousel-caption">
+          </div>
+          <a href="https://www.google.fr/?q=Number+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
+            <div class="picsum-img-wrapper">
+              <img class="img" [src]="img">
+            </div>
+          </a>
+        </ng-template>
+
+    </ngb-carousel>
+      
+      <hr>
+       <h1 class="display-2 title">جواهر القلوب</h1>
+        <h4 class="description">موقع يحتوي على جميع أنواع الحكم و الأحاديث</h4>
+      <div class="md-form mt-0 search-box">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+      </div>
+
+
+          

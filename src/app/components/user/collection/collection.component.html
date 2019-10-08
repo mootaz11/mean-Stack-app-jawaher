@@ -1,0 +1,100 @@
+<div class="container">
+
+  <div class="row">
+
+
+
+
+      <ng-template #content let-modal>
+          <div class="modal-header">
+            <h4 class="modal-title ml-auto" id="modal-basic-title">اضافة مجموعة</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form [formGroup]="CreateCollectionForm">
+              <div class="form-group">
+                <label for="nameCollection" class="CollectionNameLabel">اسم المجموعة</label>
+                <div class="input-group">
+
+                  <input id="nameCollection" class="form-control" placeholder="اسم المجموعة"  formControlName="namecollection" #namecollection>
+                  
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark mx-auto" (click)="modal.close('Save click');addCollection(namecollection.value)">تسجيل</button>
+          </div>
+        </ng-template>
+        
+        
+
+
+
+
+
+
+    <div class="col-12 ">
+
+      <mat-tab-group class="mat-tab-group">
+        <mat-tab label="المجموعات" class="mat-tab">
+
+          <div class="square ng-scope" id={{collection._id}} (click)="checkCollection(i)"  *ngFor="let collection of Collections ;let i = index">
+            <div>
+              <table class="square-table" >
+                <tbody>
+                  <tr>
+                    <td class="sq-cell">
+                      <div class="sq-cell-div">
+                        <span class="collName ng-binding">{{collection.namecollection}}</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="collQuoteCount img-rounded ng-binding"> حكم 0 </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div class="square sq-add" data-ng-click="onCollectionAddClicked()" data-ng-show="showNewCollectionsButton()">
+            <table class="square-table-add">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: middle; text-align:center;">
+                    <span class="collName1">
+                      <a class="btn btn-primary " (click)="open(content)"><i class="fa fa-plus"></i>  اضافة مجموعة</a>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+
+
+
+
+        </mat-tab>
+      </mat-tab-group>
+
+
+    </div>
+
+
+  </div>
+  <div class="row part2">
+
+  </div>
+
+
+
+</div>

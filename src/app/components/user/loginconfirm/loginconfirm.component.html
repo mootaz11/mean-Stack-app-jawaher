@@ -1,0 +1,35 @@
+<div class="row" *ngIf="isVerified==='false'">
+
+        <div class="col-6 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-header-text">تثبيت الحساب</h3>
+                </div>
+    
+                <div class="card-body">
+                    <form [formGroup]="confirmLogin">
+                        <mat-form-field class="field-full-width">
+                            <input matInput placeholder="البريد الالكتروني"  formControlName="email" #email>
+                        </mat-form-field>
+                        <mat-form-field class="field-full-width">
+                            <input matInput placeholder="كلمة السر" formControlName="password" #password>
+                        </mat-form-field>
+                    </form>
+                    
+                    <button type="button" class="btn btn-secondary mt-3 btnLogin" (click)="confirmlogin(email.value,password.value)">تسجيل الدخول</button><br>
+                    <button type="button"  routerLink="/signup" class="btn btn-secondary  mt-3  btnSignup">انشاء حساب جديد</button>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+        </div>
+    
+    </div>
+
+
+<div class="row" *ngIf="isVerified==='true'">
+<h1 class="display-1 mx-auto"> 404 not found </h1>
+</div>

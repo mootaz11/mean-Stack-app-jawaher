@@ -1,0 +1,14 @@
+.container{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding: 15px;
+}
+.row{
+    padding: 5px;
+    margin:5px;
+}
+h1{
+    justify-content: center;
+    text-align: center;
+}

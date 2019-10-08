@@ -1,0 +1,139 @@
+<div class="container-fluid">
+    <div class="row justify-content-md-center">
+
+
+        <div class="col-1">
+            
+            <ul class="social-media-list mx-auto">
+                <li><a href="#"><img class="fb" src="../../../../assets/images/facebook-logo.png" alt=""></a></li>
+                <li><a href="#"><img class="lk" src="../../../../assets/images/linkedin-logo.png" alt=""></a></li>
+                <li><a href="#"><img class="tw" src="../../../../assets/images/twitter (1).png" alt=""></a></li>
+                <li><a href="#"><img class="in" src="../../../../assets/images/instagram (3).png" alt=""></a></li>
+            </ul>
+            <div class="contact">
+                    <a href="#"><img class="fb" src="../../../../assets/images/mail.png" alt=""></a>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="col-8 div-categories">
+
+            <div class="row mt-2 ml-auto">
+                <h3 class=" display-4 categories ml-auto"> الأصناف </h3>
+
+            </div>
+            <div class="row mt-2 ml-auto">
+
+
+
+
+                <div class="square  ml-auto "  (click)="checkCollection(i)"
+                    *ngFor="let categorie of categories">
+                    <div>
+                        <table class="square-table">
+                            <tbody>
+                                <tr>
+                                    <td class="sq-cell">
+                                        <div class="sq-cell-div">
+                                            <span class="collName ng-binding">{{categorie.title}}</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="collQuoteCount img-rounded ng-binding">5</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row mt-2 ml-auto">
+                <h3 class=" display-4 categories ml-auto">موضوع 1 </h3>
+            </div>
+            <div class="row mt-2 ml-auto">
+                <div class="col-3 mx-auto" *ngFor="let categorie of categories">
+                    <div class="card m-2" style="width: 12rem;">
+
+                        <img src={{categorie.image}} class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{categorie.title}}</h5>
+                            <p class="card-text">{{categorie.text}} </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2 ml-auto">
+                <h3 class=" display-4 categories ml-auto">موضوع 2</h3>
+            </div>
+            <div class="row mt-2 ml-auto">
+                <div class="col-3 mx-auto" *ngFor="let categorie of categories">
+                    <div class="card m-2" style="width: 12rem;">
+
+                        <img src={{categorie.image}} class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{categorie.title}}</h5>
+                            <p class="card-text">{{categorie.text}} </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="row mt-2 ml-auto">
+                <h3 class=" display-4 categories ml-auto">موضوع 3</h3>
+            </div>
+            <div class="row mt-2 ml-auto">
+                <div class="col-2 mx-auto" *ngFor="let categorie of categories">
+                    <div class="card m-2" style="width: 12rem;">
+
+                        <img src={{categorie.image}} class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{categorie.title}}</h5>
+                            <p class="card-text">{{categorie.text}} </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+ 
+        <div class="col-3 today ">
+ <div class="square  ml-auto "  (click)="checkCollection(i)"
+                    *ngFor="let categorie of categories">
+                    <div>
+                        <table class="square-table">
+                            <tbody>
+                                <tr>
+                                    <td class="sq-cell">
+                                        <div class="sq-cell-div">
+                                            <span class="collName ng-binding">{{categorie.title}}</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="collQuoteCount img-rounded ng-binding">5</div>
+                    </div>
+                </div>        </div>
+
+    </div>
+</div>

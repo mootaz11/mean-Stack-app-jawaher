@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+        <h1>
+            {{collection.namecollection}}
+        </h1>
+            
+            
+
+
+    </div>
+    <div class="row">
+
+
+            <ng-template #content let-modal>
+                    <div class="modal-header">
+                      <h4 class="modal-title ml-auto" id="modal-basic-title">تعديل مجموعة</h4>
+                      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form [formGroup]="editForm">
+                        <div class="form-group">
+                          <label for="nameCollection" class="CollectionNameLabel"> الاسم الجديد </label>
+                          <div class="input-group">
+          
+                            <input id="nameCollection"  class="form-control" placeholder={{collection.namecollection}}  formControlName="namecollection" #namecollection>
+                            
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark mx-auto" (click)="modal.close('Save click');editCollection(namecollection.value)">تسجيل</button>
+                      <button type="button" class="btn btn-outline-dark mx-auto" (click)="modal.close('Save click');deleteCollection()">حذف هذه المجموعة</button>
+
+                    </div>
+                  </ng-template>
+        
+
+
+
+
+
+            <button class="btn btn-outline-primary mt-auto" (click)="open(content)">
+                    edit collection
+            </button>
+            
+    </div>
+
+    
+</div>

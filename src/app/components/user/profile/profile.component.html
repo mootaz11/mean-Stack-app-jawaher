@@ -1,0 +1,88 @@
+<div class="container">
+
+
+    <div class="row">
+        
+        <div class="col-8 title">
+            
+            <h1 class="display-4 mt-2 mx-auto">
+                   {{ citation }}
+            </h1>
+            <br>
+            <mat-divider></mat-divider>
+
+        </div>
+
+        <div class="col col-lg-4 col-md-4 col-sm-12 col-xs-12 ml-auto">
+
+            <div class="row-12">
+                <div class="profile-img">
+                    <img id="img1" src="http://localhost:3000/{{imageSrc}}" alt="" />
+                    <div class="file btn btn-lg btn-primary">
+                        تغيير الصورة
+                        <input type="file" (change)="handlefilenput($event);changepic()" class="fileinput"
+                            name="file" />
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row-12">
+                <div class="col-12 mx-auto">
+
+                <input type="submit" class="profile-edit-btn mx-auto" name="btnAddMore" (click)="activeEdit()"
+                    value="تعديل الملف"/>
+                <input type="submit" class="profile-edit-btn mx-auto" name="btnAddMore" (click)="activeEditPassword()"
+                    value="تعديل كلمة السر" />
+                
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="row-12">
+            <div class="col-12">
+                <br>
+                    <mat-divider></mat-divider>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    <div class="row-12">
+
+        <div class="col col-lg-12 col-md-12 col-sm-8 col-xs-8  mx-auto align-self-center">
+            
+
+            <app-about *ngIf="isActive==='about'"></app-about>
+            <app-editprofile  *ngIf="isActive==='edit'"></app-editprofile>
+            <app-edit-password *ngIf="isActive==='editPassword'"></app-edit-password>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+   
+
+
+
+
+</div>

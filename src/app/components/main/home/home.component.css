@@ -1,0 +1,179 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+.home-div{
+    width: 100%;
+}
+.categories{
+    float: right;
+}
+.social-media-list{
+    height: 20%;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    right:36%;
+    top: 14%;
+    background-color: #303032;
+    border-radius: 7px;
+
+}
+.contact{
+    height: 5%;
+    width: 70px;
+    position: absolute;
+    right:36%;
+    top: 35%;
+    background-color: #303032;
+    padding: 5px;
+    border-radius: 7px;
+}
+.contact a img{ 
+width:60px;
+margin: auto;
+}
+.contact a:hover {
+    opacity: .8;
+
+}
+.square {
+    
+    position: relative;
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+    display: inline-block;
+    margin: 5px;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #c2c2c2;
+}
+.square:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    -webkit-transition: .3s;
+    transition: .3s;
+
+}
+
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tbody:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    -webkit-transition: .3s;
+    transition: .3s;
+
+}
+.collName {
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.CollectionNameLabel{
+    float:right;
+}
+.collName1 {
+    font-size: 18px;
+    font-weight: 500;
+    color:white;
+}
+.square-table-add {
+    width: 150px;
+    height: 155px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-plus:before {
+    content: "\f067";
+}
+table {
+    background-color: transparent;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.sq-cell {
+    height: 95px;
+    vertical-align: middle;
+    text-align: center;}
+
+    .sq-cell-div {
+        width: 144px;
+        max-height: 95px;
+        overflow: hidden;
+    }
+    .collName {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .collQuoteCount {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        background-color: #8fd1fd;
+        color: white;
+        text-align: center;
+    }
+
+    .img-rounded 
+    {
+        border-radius: 5px;
+    }
+
+.square-table {
+    table-layout: fixed;
+    width: auto;
+    margin: 15px 0;}
+
+    table {
+        background-color: transparent;
+    }
+    table {
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+.social-media-list li { 
+    float:right;
+    padding: 2px;
+    margin: 14px;
+}
+.social-media-list li a img  {
+width : 40px;
+}
+.social-media-list li:hover {
+    opacity: .8;
+}
+.social-media-list li a:hover{
+    opacity: .8;
+}
+

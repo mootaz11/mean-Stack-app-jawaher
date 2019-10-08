@@ -1,0 +1,130 @@
+
+<div class="row">
+    
+    
+    <div class="col col-lg-8 col-md-8 cold-sm-8 col-xs-8 mx-auto">
+        <br>
+
+        <mat-divider></mat-divider>
+
+        <br>
+
+        <div class="card ">
+            <div class="card-header text-center">
+                <h3 class="display-6">انشاء حساب</h3>
+            </div>
+            <div class="card-body">
+
+                <form [formGroup]="CreateForm" class="signup-form">
+
+
+
+
+
+                    <mat-form-field  class="field-full-width">
+                        <input matInput placeholder="الاسم"  class="form-control" formControlName="nom" #nom required> 
+
+                      
+
+                    </mat-form-field>
+
+                    <mat-form-field class="field-full-width">
+                        <input matInput placeholder="اللقب"class="form-control" formControlName="prenom" #prenom required>
+                    </mat-form-field>
+
+                    <mat-form-field class="field-full-width">
+                        <input matInput placeholder="المدينة"class="form-control" formControlName="ville" #ville required>
+                    </mat-form-field>
+
+                    <mat-form-field class="field-full-width">
+                        <input matInput placeholder="البلد"class="form-control" formControlName="pays" #pays required>
+                    </mat-form-field>
+
+                    <mat-form-field class="field-full-width">
+                        <input matInput placeholder="المهنة"class="form-control" formControlName="profession" #profession required>
+                    </mat-form-field>
+
+                    <mat-form-field class="field-full-width">
+                        <input matInput type="text"class="form-control" placeholder="المستوى الدراسي" formControlName="education"
+                            #education>
+                    </mat-form-field>
+
+                    <mat-form-field class="field-full-width">
+                        <input matInput placeholder="رقم الهاتف"class="form-control" formControlName="numTel" #numTel>
+                    </mat-form-field>
+
+                    <mat-form-field class="field-full-width">
+                        <input matInput type="date" placeholder=" تاريخ الولادة "class="form-control" formControlName="naissance" #naissance>
+                    </mat-form-field>
+
+                    <mat-form-field class="field-full-width">
+                        <input matInput placeholder="البريد الالكتروني"class="form-control" type="email"  email="true"   formControlName="email" #email required>
+                        <mat-error > الرجاء التثبت من البريد الالكتروني</mat-error>
+
+                    </mat-form-field>
+
+                    <mat-form-field class="field-full-width">
+                        <mat-select placeholder="الجنس"class="form-control" formControlName="genre" #genre required>
+                            <mat-option value="ذكر">ذكر</mat-option>
+                            <mat-option value="أنثى">أنثى</mat-option>
+                        </mat-select>
+
+                    </mat-form-field>
+
+                    <mat-form-field class="field-full-width">
+                        <input matInput placeholder="الموقع الالكتروني"class="form-control" formControlName="Siteweb" #Siteweb>
+                    </mat-form-field>
+
+                    <mat-form-field class="field-full-width">
+                        <input matInput placeholder="الاهتمامات"class="form-control" formControlName="interests" #interests>
+                    </mat-form-field>
+
+                    <div class="file-field">
+                        <div class="btn btn-primary btn-sm ">
+                            <input type="file"  (change)="handlefileInput($event) ">
+                        </div>
+                    </div>
+
+
+
+                    <div>
+
+                    <mat-form-field class="field-full-width">
+                        <input matInput type="password" placeholder="كلمة السر"class="form-control" formControlName="password" #password required>
+                        <mat-error>الرجاء ادخال كلمة سر قوية</mat-error>
+
+                        <div class="recomend">
+                                <mat-hint>password contains A characters </mat-hint> <br>
+                                <mat-hint>password contains a characters </mat-hint><br>
+                                <mat-hint>password length must be more than 8characters </mat-hint>
+
+                            
+                       </div>
+  
+
+                    </mat-form-field>
+                </div>
+
+
+
+
+
+
+                    <button type="submit"
+                        (click)="addAdherent(nom.value,prenom.value,ville.value,pays.value,profession.value,education.value,numTel.value,naissance.value,email.value,genre.value,Siteweb.value,interests.value,password.value)"
+                        [disabled]="CreateForm.pristine || CreateForm.invalid" class=" btn btn-primary  btnSignup">
+                        اضغط هنا للتسجيل
+                    </button>
+
+
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>

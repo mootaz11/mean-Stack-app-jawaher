@@ -1,0 +1,177 @@
+body{
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+
+.emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+
+
+
+h1{
+    text-align: center;
+}
+.profile-img{
+    text-align: center;
+}
+.profile-img img{
+    width: 80%;
+    height: 100%;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -23%;
+    width: 80%;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    background: #212529b8;
+    border-radius:8px;
+
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-head h5{
+    color: #333;
+}
+.profile-head h6{
+    color: #0062cc;
+}
+
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+    margin: 3px;
+    position: relative;
+    left:15%;
+
+}
+.profile-edit-btn:hover{
+    border-radius: 1.5rem;
+    border : 2px ;
+    width: 70%;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 3px;
+    border : 2px solid #6c757d;
+    background-color: white;
+    color: #6c757d;
+
+
+}
+
+.proile-rating{
+    font-size: 25px;
+    color: #818182;
+    margin-top: 5%;
+}
+.proile-rating span{
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+.profile-work p{
+    font-size: 12px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+.profile-work a{
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile-work ul{
+    list-style: none;
+}
+.profile-tab label{
+    font-weight: 600;
+}
+.profile-tab p{
+    font-weight: 600;
+    color: #0062cc;
+}
+    
+
+
+
+.fileinput{
+    cursor:pointer;
+}
+
+
+#img1:hover
+{
+    opacity: 0.8;
+    cursor:pointer;
+}
+#img1{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.info{
+    cursor: pointer;
+    float: right;
+    padding: 5px;
+    transition: 0.5s;
+
+
+}
+.info:hover{
+    color:#0062cc;
+    opacity: .9;
+    border: 1px solid #0062cc;
+    border-radius: 5px;
+}
+
+.infoAdherent{
+    margin-left:5px;
+}
+
+.container{
+    margin: 7px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+.display-4{
+    display:none;
+}
+mat-divider{
+    display: none;
+}
+
+
+}
+@media only screen and (max-width: 320px) {
+    .display-4{
+        display:none;
+    }
+    mat-divider{
+        display: none;
+    }
+    
+}
